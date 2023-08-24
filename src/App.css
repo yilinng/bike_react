@@ -1,0 +1,505 @@
+/*navbar*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .leftBar {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.navbar .log {
+  width: 95px;
+  height: 95px;
+  margin-right: 5%;
+}
+
+.navbar .log img {
+  width: 95px;
+  height: 95px;
+}
+
+.navbar .linkList {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+}
+
+.navbar .linkList a {
+  margin: 0 10px;
+  color: #677510;
+}
+
+.navbar .linkList a:hover,
+.navbar .linkList a.active {
+  margin: 0 10px;
+  color: #b5cc22;
+}
+
+/*https://www.geeksforgeeks.org/how-to-add-a-rounded-border-with-css/*/
+/*https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css*/
+.navbar .loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5cc22;
+  border-radius: 100px;
+  width: 85px;
+  height: 40px;
+  margin-right: 10%;
+}
+
+.navbar .loginBtn a {
+  color: white;
+}
+
+/*checkbox*/
+
+.checkBox_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.checkBox_container .checkBox {
+  width: 60%;
+}
+
+.checkBox_container .checkBox h3 {
+  color: #b5cc22;
+  font-size: 24px;
+  font-family: 700;
+  padding-bottom: 40px;
+}
+
+.checkBox_container .checkBox .actionList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+
+.checkBox_container .checkBox .actionList .selectList {
+  flex: 1;
+  width: 175px;
+  height: auto;
+  background-color: #f6f6f6;
+}
+
+/*
+.checkBox_container .checkBox .actionList .selectList select {
+  font-size: 18px;
+  border: none;
+  width: 160px;
+  outline: 0;
+  background-color: #f6f6f6;
+  font-weight: 700;
+}
+*/
+
+.checkBox_container .checkBox .actionList .searchDiv {
+  position: relative;
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 277px;
+  height: 40px;
+  background-color: #f6f6f6;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.checkBox_container .checkBox .actionList .searchInputDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.checkBox_container .checkBox .actionList .searchList_ul {
+  position: absolute;
+  background-color: #f6f6f6;
+  list-style-type: none;
+  z-index: 3;
+  width: 100%;
+}
+
+.checkBox_container .checkBox .actionList .searchList_ul li {
+  margin: 10px 0;
+}
+
+.checkBox_container .checkBox input[type="text"] {
+  border: none;
+  padding: 10px 12px;
+  background-color: #f6f6f6;
+  flex: 0.8;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.checkBox_container .checkBox input[type="text"]:focus {
+  outline: none;
+}
+
+.checkBox_container .checkBox .actionList .searchIcon {
+  cursor: pointer;
+  flex: 0.2;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+/*https://stackoverflow.com/questions/14327104/is-there-any-way-for-positionabsolute-div-to-retain-relative-width*/
+.checkBox_container .checkBox .actionList .searchDiv .searchList_ul {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background-color: #f6f6f6;
+  list-style-type: none;
+  margin: 42px auto;
+  /*https://stackoverflow.com/questions/9620594/removing-ul-indentation-with-css*/
+  padding: 0;
+}
+
+.checkBox_container .checkBox .actionList .searchDiv .searchList_ul li {
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+.checkBox_container .checkBox .actionList .searchDiv .searchList_ul li:hover {
+  color: #b5cc22;
+}
+
+.checkBox_container .checkBox .clickBtn {
+  margin: 20px 0;
+  display: flex;
+}
+
+.checkBox_container .checkBox .clickBtn .selectAllBox {
+  margin: 0 45px 0 0;
+}
+
+.checkBox_container .checkBox .checkListBox {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 500px;
+  height: 160px;
+  grid-gap: 0.5rem;
+}
+
+.checkBox_container .checkBox .checkListBox .checkItemBox {
+  height: 20px;
+  width: 120px;
+}
+
+input[type="checkbox"] {
+  color: #b5cc22;
+  vertical-align: middle;
+  background: none;
+  border: 2px solid #e5e5e5;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background 300ms;
+  cursor: pointer;
+  /*https://stackoverflow.com/questions/24322599/why-cannot-change-checkbox-color-whatever-i-do*/
+  filter: hue-rotate(240deg);
+}
+
+.checkBox_container .bike_img {
+  align-self: end;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*list*/
+
+.sitesList {
+  margin: 2% 10%;
+}
+
+/*https://stackoverflow.com/questions/10666573/tables-border-radius-does-not-function-as-expected*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid #aeaeae;
+}
+
+thead th {
+  background-color: #b5cc22;
+  color: white;
+}
+
+td,
+th {
+  text-align: left;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.siteItem .th_sna,
+.siteItem .td_sna {
+  width: 35%;
+}
+
+/*Spinner*/
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #b5cc22;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 5% auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile*/
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .mobile_navbar {
+    position: fixed;
+    height: 72px;
+    z-index: 5;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+  .mobile_navbar .mobile_header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    margin: auto 0;
+  }
+
+  .mobile_navbar .mobile_header .log {
+    margin-left: 5%;
+    width: 65px;
+    height: 65px;
+  }
+
+  .mobile_navbar .mobile_header .log img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .mobile_navbar .mobile_header .menu {
+    margin-right: 5%;
+    color: #b5cc22;
+  }
+
+  .mobile_navbar .sideBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 72px;
+    left: 0;
+    background-color: #b5cc22;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .mobile_navbar .sideBar .linkList a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .mobile_navbar .sideBar .linkList a:hover,
+  .mobile_navbar .sideBar .linkList a.active {
+    color: #677510;
+  }
+
+  .mobile_navbar .sideBar .loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b5cc22;
+    background-color: white;
+    border-radius: 100px;
+    width: 85px;
+    height: 40px;
+    margin: 50% 32px;
+  }
+
+  .mobile_navbar .sideBar .loginBtn a {
+    text-decoration: none;
+    color: #b5cc22;
+  }
+
+  .mobile_navbar .closebtn {
+    color: #b5cc22;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  /*checkbox*/
+
+  .checkBox_container {
+    flex-direction: column;
+    margin: 0 5%;
+  }
+
+  .checkBox_container .checkBox {
+    width: 100%;
+  }
+
+  .checkBox_container .checkBox h3 {
+    margin-top: 96px;
+  }
+
+  .checkBox_container .checkBox .actionList {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .checkBox_container .checkBox .actionList .selectList {
+    flex: 1;
+    width: 100%;
+    height: 40px;
+  }
+
+  .checkBox_container .checkBox .actionList .selectList select {
+    width: 95%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .checkBox_container .checkBox .actionList .searchDiv {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /*
+  .checkBox_container .checkBox .actionList .searchDiv .searchInputDiv {
+    width: 100%;
+  }
+  */
+
+  .checkBox_container
+    .checkBox
+    .actionList
+    .searchDiv
+    .searchInputDiv
+    input[type="text"] {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .checkBox_container
+    .checkBox
+    .actionList
+    .actionList
+    .searchDiv
+    .searchInputDiv
+    .searchIcon {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .checkBox_container .checkBox .checkListBox {
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .checkBox_container .bike_img {
+    display: none;
+  }
+
+  .sitesList {
+    margin: 2% 5%;
+  }
+
+  /*Spinner*/
+  .loader {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .leftBar {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .navbar .loginBtn {
+    margin-right: 5%;
+  }
+
+  .checkBox_container {
+    margin: 0 5%;
+  }
+
+  .checkBox_container .checkBox .actionList .selectList {
+    flex: 1;
+    width: auto;
+    height: 40px;
+  }
+
+  .checkBox_container .checkBox .checkListBox {
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  .checkBox_container .bike_img {
+    display: none;
+  }
+  .sitesList {
+    margin: 2% 4%;
+  }
+}
